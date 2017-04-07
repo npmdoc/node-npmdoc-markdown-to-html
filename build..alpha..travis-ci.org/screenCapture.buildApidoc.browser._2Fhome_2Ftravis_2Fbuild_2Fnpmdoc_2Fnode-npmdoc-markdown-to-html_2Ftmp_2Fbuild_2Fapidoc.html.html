@@ -1,0 +1,725 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/cwjohan/markdown-to-html">markdown-to-html (v0.0.13)</a>
+</h1>
+<h4>Converts markdown text to HTML. A readable stream plus utilities and web demo.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-to-html">module markdown-to-html</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-to-html.GithubMarkdown">
+            function <span class="apidocSignatureSpan">markdown-to-html.</span>GithubMarkdown
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-to-html.Markdown">
+            function <span class="apidocSignatureSpan">markdown-to-html.</span>Markdown
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-to-html.</span>GithubMarkdown.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-to-html.</span>Markdown.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-to-html.GithubMarkdown">module markdown-to-html.GithubMarkdown</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-to-html.GithubMarkdown.GithubMarkdown">
+            function <span class="apidocSignatureSpan">markdown-to-html.</span>GithubMarkdown
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-to-html.GithubMarkdown.super_">
+            function <span class="apidocSignatureSpan">markdown-to-html.GithubMarkdown.</span>super_
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-to-html.GithubMarkdown.prototype">module markdown-to-html.GithubMarkdown.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-to-html.GithubMarkdown.prototype._read">
+            function <span class="apidocSignatureSpan">markdown-to-html.GithubMarkdown.prototype.</span>_read
+            <span class="apidocSignatureSpan">(size)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-to-html.GithubMarkdown.prototype.cat">
+            function <span class="apidocSignatureSpan">markdown-to-html.GithubMarkdown.prototype.</span>cat
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-to-html.GithubMarkdown.prototype.render">
+            function <span class="apidocSignatureSpan">markdown-to-html.GithubMarkdown.prototype.</span>render
+            <span class="apidocSignatureSpan">(fileName, opts, onDone)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-to-html.Markdown">module markdown-to-html.Markdown</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-to-html.Markdown.Markdown">
+            function <span class="apidocSignatureSpan">markdown-to-html.</span>Markdown
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-to-html.Markdown.super_">
+            function <span class="apidocSignatureSpan">markdown-to-html.Markdown.</span>super_
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-to-html.Markdown.prototype">module markdown-to-html.Markdown.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-to-html.Markdown.prototype._read">
+            function <span class="apidocSignatureSpan">markdown-to-html.Markdown.prototype.</span>_read
+            <span class="apidocSignatureSpan">(size)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-to-html.Markdown.prototype.cat">
+            function <span class="apidocSignatureSpan">markdown-to-html.Markdown.prototype.</span>cat
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-to-html.Markdown.prototype.render">
+            function <span class="apidocSignatureSpan">markdown-to-html.Markdown.prototype.</span>render
+            <span class="apidocSignatureSpan">(fileName, opts, onDone)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-to-html" id="apidoc.module.markdown-to-html">module markdown-to-html</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-to-html.GithubMarkdown" id="apidoc.element.markdown-to-html.GithubMarkdown">
+        function <span class="apidocSignatureSpan">markdown-to-html.</span>GithubMarkdown
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function GithubMarkdown() {
+  this.super_ = this.constructor.super_;
+  this.super_.call(this);
+  this.debug = false;
+  this.bufmax = 1024;
+  this.html = '';
+  this.setEncoding('utf8');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-to-html.Markdown" id="apidoc.element.markdown-to-html.Markdown">
+        function <span class="apidocSignatureSpan">markdown-to-html.</span>Markdown
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Markdown() {
+  this.super_ = this.constructor.super_;
+  this.super_.call(this);
+  this.debug = false;
+  this.bufmax = 1024;
+  this.html = '';
+  this.setEncoding('utf8');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-to-html.GithubMarkdown" id="apidoc.module.markdown-to-html.GithubMarkdown">module markdown-to-html.GithubMarkdown</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-to-html.GithubMarkdown.GithubMarkdown" id="apidoc.element.markdown-to-html.GithubMarkdown.GithubMarkdown">
+        function <span class="apidocSignatureSpan">markdown-to-html.</span>GithubMarkdown
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function GithubMarkdown() {
+  this.super_ = this.constructor.super_;
+  this.super_.call(this);
+  this.debug = false;
+  this.bufmax = 1024;
+  this.html = '';
+  this.setEncoding('utf8');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-to-html.GithubMarkdown.super_" id="apidoc.element.markdown-to-html.GithubMarkdown.super_">
+        function <span class="apidocSignatureSpan">markdown-to-html.GithubMarkdown.</span>super_
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Readable(options) {
+  if (!(this instanceof Readable))
+    return new Readable(options);
+
+  this._readableState = new ReadableState(options, this);
+
+  // legacy
+  this.readable = true;
+
+  if (options &amp;&amp; typeof options.read === 'function')
+    this._read = options.read;
+
+  Stream.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-to-html.GithubMarkdown.prototype" id="apidoc.module.markdown-to-html.GithubMarkdown.prototype">module markdown-to-html.GithubMarkdown.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-to-html.GithubMarkdown.prototype._read" id="apidoc.element.markdown-to-html.GithubMarkdown.prototype._read">
+        function <span class="apidocSignatureSpan">markdown-to-html.GithubMarkdown.prototype.</span>_read
+        <span class="apidocSignatureSpan">(size)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_read = function (size) {
+  var pushSize = Math.min(size, this.bufmax);
+  if (this.html.length &gt; 0) {
+    if (this.debug) console.error('&gt;&gt;&gt;_read size=' + pushSize + ', html="' + this.html.substr(0, pushSize) + '"');
+    this.push(this.html.substr(0, pushSize));
+    this.html = this.html.slice(pushSize);
+    if (this.done &amp;&amp; this.html.length === 0) {
+      this.push(null); // eof
+    }
+  } else {
+    if (this.debug) console.error('&gt;&gt;&gt;_read - nothing to push');
+  }
+  return;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-to-html.GithubMarkdown.prototype.cat" id="apidoc.element.markdown-to-html.GithubMarkdown.prototype.cat">
+        function <span class="apidocSignatureSpan">markdown-to-html.GithubMarkdown.prototype.</span>cat
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cat = function (data) {
+  this.html += data;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-to-html.GithubMarkdown.prototype.render" id="apidoc.element.markdown-to-html.GithubMarkdown.prototype.render">
+        function <span class="apidocSignatureSpan">markdown-to-html.GithubMarkdown.prototype.</span>render
+        <span class="apidocSignatureSpan">(fileName, opts, onDone)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">render = function (fileName, opts, onDone) {
+  if (this.debug) console.error('&gt;&gt;&gt;rendering...');
+  var flavor     = opts.flavor || 'markdown',
+      context    = opts.context,
+      stylesheet = opts.stylesheet,
+      userName   = opts.username || 'request',
+      title      = opts.title,
+      titleText  = title;
+
+  if (title) {
+    var dirName  = path.dirname(fileName),
+        baseName = path.basename(fileName),
+        pathName = path.resolve(fileName);
+    titleText = titleText.replace('$FILENAME', fileName);
+    titleText = titleText.replace('$DIRNAME',  dirName);
+    titleText = titleText.replace('$BASENAME', baseName);
+    titleText = titleText.replace('$PATHNAME', pathName);
+  }
+
+  this.done = false;
+
+  this.once('error', function(err) {
+    if (onDone) onDone(err)
+    else console.error('&gt;&gt;&gt;' + err);
+  });
+
+  if (! fileName) {
+    console.log('Missing file name arg');
+    process.exit();
+  }
+
+  //======================================================
+  // Read the file content.
+  //======================================================
+  fs.readFile(fileName, onFileReady.bind(this));
+
+  //======================================================
+  // Process the file content.
+  //======================================================
+  function onFileReady(err, data) {
+    if (err) {
+      if (onDone) onDone(err)
+      else console.error('&gt;&gt;&gt;' + err);
+      return;
+    }
+
+    var fileContent = data.toString();
+
+    var msg = {
+      text:    fileContent,
+      mode:    flavor,
+      context: context
+    };
+
+    var jsonMsg = JSON.stringify(msg);
+
+    var options = {
+      method: 'POST',
+      preambleCRLF: true,
+      postambleCRLF: true,
+      uri: 'https://api.github.com/markdown',
+      'content-type': 'application/json',
+      headers: {
+        'User-Agent' : userName
+      },
+      body: jsonMsg
+    };
+
+    //=======================================================
+    // Call the Github Markdown API to parse the file content
+    //=======================================================
+    request(options, handleResponse.bind(this));
+
+    //======================================================
+    // Enhance the output of the Github Markdown API with
+    // optional header or trailer.
+    //======================================================
+    function handleResponse(err, response, body) {
+      if (this.debug) console.error('&gt;&gt;&gt;handling response...');
+      if (err) {
+        if (onDone) onDone(err)
+        else console.error('&gt;&gt;&gt;upload to github failed: ', err);
+        return;
+      }
+
+      if (stylesheet || title) {
+        if (titleText == null) titleText = fileName;
+        this.cat('&lt;!DOCTYPE html&gt;\n' +
+                 '&lt;html&gt;\n' +
+                 '&lt;head&gt;\n' +
+                 '  &lt;title&gt;' + titleText + '&lt;/title&gt;\n' +
+                 '  &lt;link rel="stylesheet" href="' + stylesheet + '"&gt;\n' +
+                 '&lt;/head&gt;\n' +
+                 '&lt;body&gt;\n' );
+      }
+
+      this.cat(body);
+      this.cat('\n');
+
+      if (stylesheet || title) {
+        this.cat( '&lt;/body&gt;\n&lt;/html&gt;\n' );
+      }
+
+      if (this.debug) console.error('&gt;&gt;&gt;finished getting code');
+      this.done = true;
+      if (onDone) onDone();
+    } // end handleResponse
+  } // end onFileReady
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+...
+// Write a header.
+console.log('===============================');
+// Write a trailer at eof.
+md.once('end', function() {
+  console.log('===============================');
+});
+md.<span class="apidocCodeKeywordSpan">render</span>(fileName, opts, function(err) {
+  if (err) {
+    console.error('&gt;&gt;&gt;' + err);
+    process.exit();
+  }
+  md.pipe(process.stdout);
+});
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-to-html.Markdown" id="apidoc.module.markdown-to-html.Markdown">module markdown-to-html.Markdown</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-to-html.Markdown.Markdown" id="apidoc.element.markdown-to-html.Markdown.Markdown">
+        function <span class="apidocSignatureSpan">markdown-to-html.</span>Markdown
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Markdown() {
+  this.super_ = this.constructor.super_;
+  this.super_.call(this);
+  this.debug = false;
+  this.bufmax = 1024;
+  this.html = '';
+  this.setEncoding('utf8');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-to-html.Markdown.super_" id="apidoc.element.markdown-to-html.Markdown.super_">
+        function <span class="apidocSignatureSpan">markdown-to-html.Markdown.</span>super_
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Readable(options) {
+  if (!(this instanceof Readable))
+    return new Readable(options);
+
+  this._readableState = new ReadableState(options, this);
+
+  // legacy
+  this.readable = true;
+
+  if (options &amp;&amp; typeof options.read === 'function')
+    this._read = options.read;
+
+  Stream.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-to-html.Markdown.prototype" id="apidoc.module.markdown-to-html.Markdown.prototype">module markdown-to-html.Markdown.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-to-html.Markdown.prototype._read" id="apidoc.element.markdown-to-html.Markdown.prototype._read">
+        function <span class="apidocSignatureSpan">markdown-to-html.Markdown.prototype.</span>_read
+        <span class="apidocSignatureSpan">(size)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_read = function (size) {
+  var pushSize = Math.min(size, this.bufmax);
+  if (this.html.length &gt; 0) {
+    if (this.debug) console.error('&gt;&gt;&gt;_read size=' + pushSize + ', html="' + this.html.substr(0, pushSize) + '"');
+    this.push(this.html.substr(0, pushSize));
+    this.html = this.html.slice(pushSize);
+    if (this.done &amp;&amp; this.html.length === 0) {
+      this.push(null); // eof
+    }
+  } else {
+    if (this.debug) console.error('&gt;&gt;&gt;_read - nothing to push');
+  }
+  return;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-to-html.Markdown.prototype.cat" id="apidoc.element.markdown-to-html.Markdown.prototype.cat">
+        function <span class="apidocSignatureSpan">markdown-to-html.Markdown.prototype.</span>cat
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cat = function (data) {
+  this.html += data;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-to-html.Markdown.prototype.render" id="apidoc.element.markdown-to-html.Markdown.prototype.render">
+        function <span class="apidocSignatureSpan">markdown-to-html.Markdown.prototype.</span>render
+        <span class="apidocSignatureSpan">(fileName, opts, onDone)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">render = function (fileName, opts, onDone) {
+  var flavour    = opts.flavor || 'gfm',
+      highlight  = opts.highlight,
+      stylesheet = opts.stylesheet,
+      context    = opts.context,
+      title      = opts.title,
+      titleText  = title;
+
+  if (title) {
+    var dirName  = path.dirname(fileName),
+        baseName = path.basename(fileName),
+        pathName = path.resolve(fileName);
+    titleText = titleText.replace('$FILENAME', fileName);
+    titleText = titleText.replace('$DIRNAME',  dirName);
+    titleText = titleText.replace('$BASENAME', baseName);
+    titleText = titleText.replace('$PATHNAME', pathName);
+  }
+
+  this.done = false;
+
+  this.once('error', function(err) {
+    if (onDone) onDone(err)
+    else console.error('&gt;&gt;&gt;' + err);
+  });
+
+  if (fileName === null) {
+    if (onDone) onDone('Missing file name arg');
+    else console.error('&gt;&gt;&gt;Missing file name arg');
+  }
+
+  //======================================================
+  // Read the file content.
+  //======================================================
+  fs.readFile(fileName, onFileReady.bind(this));
+
+  //======================================================
+  // Process the file content.
+  //======================================================
+  function onFileReady(err, data) {
+    if (err) {
+      if (onDone) onDone(err);
+      else console.error('&gt;&gt;&gt;' + err);
+      return;
+    }
+
+    var fileContent = data.toString();
+
+    var options = {
+      gfm: (flavour === 'gfm') ? true : false,
+      breaks: true,
+      tables: true,
+      sanitize: true
+    };
+
+    if (highlight) {
+      options['highlight'] = function(code, lang, callback) {
+        pygmentize({lang: lang, format: 'html'}, code, function(err, result) {
+          if (err) {
+            callback(err);
+          }
+          callback(err, result.toString());
+        });
+      }
+    }
+
+    //======================================================
+    // Call marked to parse the file content
+    //======================================================
+    if (this.debug) console.error('&gt;&gt;&gt;starting to get code');
+    try {
+      marked.setOptions(options);
+      marked(fileContent, getCode.bind(this));
+    } catch(err) {
+      if (onDone) onDone(err)
+      else console.error('&gt;&gt;&gt;' + err);
+    }
+
+    //======================================================
+    // Enhance the output of marked with optional header
+    // or trailer. Linkify if context specified.
+    //======================================================
+    function getCode(err, code) {
+      if (err) {
+        if (onDone) onDone(err)
+        else console.error('&gt;&gt;&gt;' + err);
+        return;
+      }
+      if (stylesheet || title) {
+        if (titleText == null) titleText = fileName;
+        this.cat('&lt;!DOCTYPE html&gt;\n' +
+                 '&lt;html&gt;\n' +
+                 '&lt;head&gt;\n' +
+                 '  &lt;title&gt;' + titleText + '&lt;/title&gt;\n');
+        if (stylesheet) {
+          this.cat('  &lt;link rel="stylesheet" href="' + stylesheet + '"&gt;\n');
+        }
+        this.cat('&lt;/head&gt;\n&lt;body&gt;\n' );
+      }
+
+      if (context) {
+        this.cat( linkify(code, context) );
+      } else {
+        this.cat( code );
+      }
+
+      if (stylesheet || title) {
+        this.cat( '&lt;/body&gt;\n&lt;/html&gt;\n' );
+      }
+      if (this.debug) console.error('&gt;&gt;&gt;finished getting code');
+      this.done = true;
+      if (onDone) onDone();
+    } // end getCode
+  } // end onFileReady
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+...
+// Write a header.
+console.log('===============================');
+// Write a trailer at eof.
+md.once('end', function() {
+  console.log('===============================');
+});
+md.<span class="apidocCodeKeywordSpan">render</span>(fileName, opts, function(err) {
+  if (err) {
+    console.error('&gt;&gt;&gt;' + err);
+    process.exit();
+  }
+  md.pipe(process.stdout);
+});
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
