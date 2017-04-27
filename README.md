@@ -1,6 +1,6 @@
 # npmdoc-markdown-to-html
 
-#### api documentation for  [markdown-to-html (v0.0.13)](https://github.com/cwjohan/markdown-to-html)  [![npm package](https://img.shields.io/npm/v/npmdoc-markdown-to-html.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-markdown-to-html) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-markdown-to-html.svg)](https://travis-ci.org/npmdoc/node-npmdoc-markdown-to-html)
+#### basic api documentation for  [markdown-to-html (v0.0.13)](https://github.com/cwjohan/markdown-to-html)  [![npm package](https://img.shields.io/npm/v/npmdoc-markdown-to-html.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-markdown-to-html) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-markdown-to-html.svg)](https://travis-ci.org/npmdoc/node-npmdoc-markdown-to-html)
 
 #### Converts markdown text to HTML. A readable stream plus utilities and web demo.
 
@@ -21,41 +21,18 @@
 ```json
 
 {
-    "name": "markdown-to-html",
-    "version": "0.0.13",
-    "description": "Converts markdown text to HTML. A readable stream plus utilities and web demo.",
-    "main": "markdown.js",
+    "author": {
+        "name": "Craig Johannsen"
+    },
     "bin": {
         "markdown": "./bin/markdown",
         "markdownb": "./bin/markdownb",
         "github-markdown": "./bin/github-markdown",
         "github-markdownb": "./bin/github-markdownb"
     },
-    "preferGlobal": true,
-    "scripts": {
-        "test": "bash script/test",
-        "clean": "bash script/clean",
-        "start": "bash script/web-demo"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/cwjohan/markdown-to-html"
-    },
-    "keywords": [
-        "markdown",
-        "markdown-to-html",
-        "html",
-        "render",
-        "convert",
-        "stream",
-        "pipe"
-    ],
-    "author": "Craig Johannsen",
-    "license": "MIT",
     "bugs": {
         "url": "https://github.com/cwjohan/markdown-to-html/issues"
     },
-    "homepage": "https://github.com/cwjohan/markdown-to-html",
     "dependencies": {
         "gfm-linkify": "^0.1.0",
         "marked": "^0.3.2",
@@ -65,9 +42,7 @@
         "tmp": "0.0.24",
         "yargs": "^1.3.3"
     },
-    "directories": {
-        "test": "test"
-    },
+    "description": "Converts markdown text to HTML. A readable stream plus utilities and web demo.",
     "devDependencies": {
         "errorhandler": "1.1.x",
         "express": "4.6.x",
@@ -76,7 +51,45 @@
         "morgan": "1.5.x",
         "serve-favicon": "2.0.x",
         "stylus": "0.47.x"
-    }
+    },
+    "directories": {
+        "test": "test"
+    },
+    "dist": {
+        "shasum": "003467759db8b319b06c1d9f092072eb44177f4d",
+        "tarball": "https://registry.npmjs.org/markdown-to-html/-/markdown-to-html-0.0.13.tgz"
+    },
+    "gitHead": "324d2924c6193b4ef60d61098fe739b1d2fba21f",
+    "homepage": "https://github.com/cwjohan/markdown-to-html",
+    "keywords": [
+        "markdown",
+        "markdown-to-html",
+        "html",
+        "render",
+        "convert",
+        "stream",
+        "pipe"
+    ],
+    "license": "MIT",
+    "main": "markdown.js",
+    "maintainers": [
+        {
+            "name": "cwjohan"
+        }
+    ],
+    "name": "markdown-to-html",
+    "optionalDependencies": {},
+    "preferGlobal": true,
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/cwjohan/markdown-to-html.git"
+    },
+    "scripts": {
+        "clean": "bash script/clean",
+        "start": "bash script/web-demo",
+        "test": "bash script/test"
+    },
+    "version": "0.0.13"
 }
 ```
 
